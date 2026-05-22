@@ -39,11 +39,14 @@ export default function Sustainability() {
         title="Compromiso con el desarrollo <span>sostenible</span>"
         description="SkyBan contribuye directamente al cumplimiento de los ODS de las Naciones Unidas."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-[680px]">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 max-w-[820px] items-start content-center">
         {odsList.map((ods, i) => (
           <div
             key={i}
-            className="ods-card border border-sky-border p-8 text-center relative overflow-hidden transition-all duration-300 hover:border-sky-gold hover:-translate-y-1.5 cursor-default group"
+            className={`ods-card border border-sky-border p-8 text-center relative overflow-hidden transition-all duration-300 hover:border-sky-gold hover:-translate-y-1.5 cursor-default group
+            ${
+            i === 0 ? 'sm:mt-0' : i === 1 ? 'sm:mt-12' : 'sm:mt-24'
+            }`}
             data-hoverable
           >
             <div className="absolute inset-0 bg-radial opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" style={{ background: 'radial-gradient(circle at center, rgba(217,168,32,0.08), transparent 70%)' }} />

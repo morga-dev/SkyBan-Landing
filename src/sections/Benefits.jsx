@@ -39,7 +39,7 @@ export default function Benefits() {
         tag="Ventajas técnicas"
         title="Diseñado para el <span>trabajador</span> y la producción"
       />
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-5 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-12">
         {benefits.map((b, i) => (
           <div
             key={i}
