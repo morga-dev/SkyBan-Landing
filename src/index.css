@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky-dark: #07160c;
+  --color-sky-surface: #0f2214;
+  --color-sky-card: #162d1c;
+  --color-sky-gold: #d9a820;
+  --color-sky-gold-light: #f0c84a;
+  --color-sky-lime: #5fbf6c;
+  --color-sky-text: #f0ede6;
+  --color-sky-muted: #8fa888;
+  --color-sky-border: rgba(95, 191, 108, 0.15);
+  --color-sky-accent: #d07040;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-sky-dark);
+  color: var(--color-sky-text);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07160c;
+}
+::-webkit-scrollbar-thumb {
+  background: #162d1c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5fbf6c;
+}
+
+::selection {
+  background: rgba(217, 168, 32, 0.3);
+  color: #f0ede6;
+}
