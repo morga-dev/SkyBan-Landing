@@ -12,10 +12,12 @@ import IntellectualProperty from './sections/IntellectualProperty';
 import Sustainability from './sections/Sustainability';
 import CTA from './sections/CTA';
 import Blog from './sections/Blog';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     <>
+      <Analytics />
       <Cursor />
       <Particles />
       <ScrollProgress />
